@@ -17,8 +17,41 @@ Use else condition to display that third variable is largest among all the varia
 stop
 
 ## Program:
-
+```python3
+using System;
+namespace Hello
+{
+    class Scope
+    {
+        public static void Main(string[] args)
+        {
+            int a;
+            int b;
+            int c;
+            Console.WriteLine("Enter the numbers");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            c = Convert.ToInt32(Console.ReadLine());
+            if (a>b) {
+                if (a>c) {
+                    Console.WriteLine("Largest Number is: " + a);
+                }
+                else
+                {
+                    Console.WriteLine("Largest Number is: " + c);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Largest Number is: " + b);
+            }
+        }
+    }
+}
+```
 ## Output:
+
+![image](https://user-images.githubusercontent.com/75235167/163827274-8da14142-3c9d-40eb-9daa-499018423d8d.png)
 
 ## Result:
 Thus the C# program to find the largest of three numbers is executed successfully
